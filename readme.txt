@@ -1,8 +1,8 @@
-日志问题
+--日志问题
 src/main/resources目录下有log4j.properties
 target/classes目录下也有log4j.properties
 
-IO winutils问题
+--IO winutils问题
 下在winutils.exe放在hadoop/bin目录下 配置环境变量 hadoop/bin/winutils
 
 spark-shell启动之后
@@ -33,8 +33,6 @@ Yarn模式部署Flink任务：  上yarn看job的详细信息
 
     2 Per Job Cluster模式 -m yarn-cluster是根据当前的job起一个集群
         1) 直接执行job .bin/flink run -m yarn-cluster -c com.atguigu.bigdata.flink.Flink001_stream_wordCount D:\ScalaCodes\spark_atguigu\target\spark-core-1.0.0.jar --host localhost --port 9999
-
-
 
 批任务就用Spark-core, spark-sql处理
 流任务可以用spark-steaming(微批次), flink处理
