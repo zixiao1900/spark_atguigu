@@ -41,4 +41,4 @@ hello git
 hello master
 hello hot-fix
 push test
-pull test 4
+pull test 6
