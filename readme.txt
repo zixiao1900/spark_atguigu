@@ -42,3 +42,4 @@ hello master
 hello hot-fix
 push test
 pull test 8
+pull test 10
