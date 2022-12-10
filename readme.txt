@@ -40,6 +40,4 @@ Yarn模式部署Flink任务：  上yarn看job的详细信息
 hello git
 hello master
 hello hot-fix
-push test
-pull test 8
-pull test 13
+push test 15
