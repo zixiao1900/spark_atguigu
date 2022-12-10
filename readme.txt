@@ -36,3 +36,5 @@ Yarn模式部署Flink任务：  上yarn看job的详细信息
 
 批任务就用Spark-core, spark-sql处理
 流任务可以用spark-steaming(微批次), flink处理
+
+hello git
