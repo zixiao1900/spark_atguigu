@@ -13,6 +13,11 @@ object Spark01_SparkSQL_json {
         val spark = SparkSession.builder().config(sparkConf).getOrCreate()
         import spark.implicits._
 
+        val dfCar1: DataFrame = spark.read.load("outputs/car_raw_table/20230219/23/26")
+        dfCar1.show()
+
+        val dfCar2: DataFrame = spark.read.load("outputs/car_raw_table/20230219/23/27")
+        dfCar2.show()
 
         // TODO 执行逻辑操作
         spark.sql("select * from json.`datas/user.json`").show()

@@ -9,7 +9,9 @@ spark-shell启动之后
 http://Tom-Jerry:4040看jobs
 
 Spark目录下提交:  例子  最后的10 是按顺序传入的参数 程序里面args(0)就能获得
-bin\spark-submit --class org.apache.spark.examples.SparkPi --master local[*] --jars ./examples/jars/spark-examples_2.12-3.3.0.jar 10
+bin\spark-submit --class org.apache.spark.examples.SparkPi --master local[2]  --jars ../examples/jars/spark-examples_2.12-3.3.0.jar 10
+bin\spark-submit --class com.atguigu.bigdata.spark.core.wc.Spark99_WordCount_reduceByKey --master local[2] D:\\ScalaCodes\\spark_scala\\target\\spark-core-1.0.0.jar  D:\\ScalaCodes\\spark_scala\\datas\\words.txt  D:\\ScalaCodes\\spark_scala\\datas\\wc1
+
 
 flink在windows上启动
 1. flink-1.8.0\bin>start-cluster.bat

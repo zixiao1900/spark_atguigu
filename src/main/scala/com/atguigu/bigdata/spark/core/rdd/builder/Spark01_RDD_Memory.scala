@@ -3,6 +3,9 @@ package com.atguigu.bigdata.spark.core.rdd.builder
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
 
+import java.text.SimpleDateFormat
+import java.util.Date
+
 object Spark01_RDD_Memory {
 
     def main(args: Array[String]): Unit = {
@@ -10,6 +13,11 @@ object Spark01_RDD_Memory {
         // TODO 准备环境
         val sparkConf = new SparkConf().setMaster("local[*]").setAppName("RDD_Memory")
         val sc = new SparkContext(sparkConf)
+
+        val str1: String = new SimpleDateFormat("yyyyMMdd HH mm").format(new Date())
+        println(str1)
+
+
 
         // TODO 创建RDD
         // 从内存中创建RDD，将内存中集合的数据作为处理的数据

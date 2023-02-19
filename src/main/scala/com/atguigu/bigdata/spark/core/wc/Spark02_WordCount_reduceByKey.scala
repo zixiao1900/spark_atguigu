@@ -26,7 +26,7 @@ object Spark02_WordCount_reduceByKey {
     val words: RDD[String] = lines.flatMap(_.split(" "))
 
     // 3. 将单词进行结构的转换,方便统计
-    // word => (word, 1)
+    // word => (word, 1)r
     val wordToOne = words.map(word => (word, 1))
 
     // 4. 将转换后的数据进行分组聚合
@@ -37,6 +37,7 @@ object Spark02_WordCount_reduceByKey {
     // 5. 将转换结果采集到控制台打印出来  其实collect才会真正执行
     val array: Array[(String, Int)] = wordToSum.collect()
     array.foreach(println)
+
 
     // TODO 关闭连接
     sc.stop()
